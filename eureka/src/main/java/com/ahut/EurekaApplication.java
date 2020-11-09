@@ -14,7 +14,6 @@ public class EurekaApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(EurekaApplication.class);
 
     public static void main(String[] args) {
-//        SpringApplication.run(EurekaApplication.class, args);
         SpringApplication application=new SpringApplication(EurekaApplication.class);
         Environment environment=application.run(args).getEnvironment();
         LOGGER.info("启动成功");
