@@ -1,4 +1,4 @@
-package com.ahut;
+package com.ahut.eureka;
 
 
 import org.slf4j.Logger;
