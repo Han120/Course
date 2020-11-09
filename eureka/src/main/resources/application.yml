@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    register-with-eureka: false  #是否将自己注册到 Eureka-Server 中，默认的为 true
+    fetch-registry: false   #是否需要拉取服务信息，默认未true
