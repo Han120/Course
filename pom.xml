@@ -25,18 +25,8 @@
         <spring-cloud.version>2020.0.0-SNAPSHOT</spring-cloud.version>
     </properties>
 
-    <dependencies>
-
-        <!--单元测试-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
+    <!--依赖管理-->
     <dependencyManagement>
-        <!--依赖管理-->
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -44,6 +34,18 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!--集成mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.11</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
