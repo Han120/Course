@@ -2,6 +2,7 @@ package com.ahut.server.service.impl;
 
 
 import com.ahut.server.domain.Test;
+import com.ahut.server.domain.TestExample;
 import com.ahut.server.mapper.TestMapper;
 import com.ahut.server.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,9 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public List<Test> list() {
-        return testMapper.list();
+        TestExample testExample = new TestExample();
+        testExample.createCriteria().andNameLike("%test%");
+        testExample.setOrderByClause("id desc");
+        return testMapper.selectByExample(testExample);
     }
 }
