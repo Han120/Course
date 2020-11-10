@@ -1,5 +1,4 @@
-server:
-  port: 8761
+
 eureka:
   client:
     register-with-eureka: false  #是否将自己注册到 Eureka-Server 中，默认的为 true
@@ -7,3 +6,5 @@ eureka:
 spring:
   application:
     name: eureka
+server:
+  port: 8761

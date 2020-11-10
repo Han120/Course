@@ -48,6 +48,11 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.47</version>
             </dependency>
+            <dependency>
+                <groupId>com.ahut</groupId>
+                <artifactId>server</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

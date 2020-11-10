@@ -1,7 +1,7 @@
 package com.ahut.system.controller;
 
-import com.ahut.system.domain.Test;
-import com.ahut.system.service.TestService;
+import com.ahut.server.domain.Test;
+import com.ahut.server.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
