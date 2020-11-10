@@ -1,12 +1,8 @@
 package com.ahut.server.domain;
 
-/**
- * @author hanzijian
- * @description:
- * @create 2020-11-10 11:41
- */
 public class Test {
     private String id;
+
     private String name;
 
     public String getId() {
@@ -14,7 +10,7 @@ public class Test {
     }
 
     public void setId(String id) {
-        this.id = id;
+        this.id = id == null ? null : id.trim();
     }
 
     public String getName() {
@@ -22,14 +18,16 @@ public class Test {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     @Override
     public String toString() {
-        return "Test{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return getClass().getSimpleName() +
+                " [" +
+                "Hash = " + hashCode() +
+                ", id=" + id +
+                ", name=" + name +
+                "]";
     }
 }
