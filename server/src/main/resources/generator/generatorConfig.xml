@@ -6,6 +6,9 @@
 <generatorConfiguration>
     <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
 
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+
         <!--生成的实体类添加toString()方法-->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
 
