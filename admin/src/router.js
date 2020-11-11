@@ -1,8 +1,9 @@
-import Vue from 'vue'
+import {createApp} from 'vue';
 import Router from 'vue-router'
 import Login from './views/login.vue'
+import App from "./app";
 
-Vue.use(Router);
+createApp(App).use(Router);
 
 export default new Router({
   mode: 'history',
