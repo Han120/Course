@@ -7,8 +7,7 @@
             <div class="center">
               <h1>
                 <i class="ace-icon fa fa-leaf green"></i>
-                <span class="">控制登录</span>
-                <span class="white" id="id-text2">Application</span>
+                <span class="red">控制登录</span>
               </h1>
               <h4 class="blue" id="id-company-text">&copy; Company Name</h4>
             </div>
@@ -21,7 +20,7 @@
                   <div class="widget-main">
                     <h4 class="header blue lighter bigger">
                       <i class="ace-icon fa fa-coffee green"></i>
-                     请输入用户名密码
+                      请输入用户名密码
                     </h4>
 
                     <div class="space-6"></div>
@@ -73,12 +72,8 @@
 </template>
 
 <script>
-
   $('body').attr('class', 'login-layout blur-login');
-
-export default {
-  name: 'App',
-}
+  export default {
+    name: "login"
+  }
 </script>
-
-
