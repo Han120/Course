@@ -23,7 +23,7 @@ public class TestServiceImpl implements TestService {
     @Override
     public List<Test> list() {
         TestExample testExample = new TestExample();
-        testExample.createCriteria().andNameLike("%test%");
+        testExample.createCriteria().andNameLike("测试%");
         testExample.setOrderByClause("id desc");
         return testMapper.selectByExample(testExample);
     }
