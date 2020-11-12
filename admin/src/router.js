@@ -1,7 +1,8 @@
-import {createApp} from 'vue';
+import {createApp} from 'vue'
 import Router from 'vue-router'
 import Login from './views/login.vue'
-import App from "./app.vue"
+import App from './app.vue'
+import Admin from './views/admin.vue'
 
 createApp(App).use(Router);
 
@@ -14,5 +15,8 @@ export default new Router({
   },{
     path: '/login',
     component: Login
+  },{
+    path: '/admin',
+    component: Admin
   }]
 })
