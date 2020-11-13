@@ -19,7 +19,7 @@ import java.util.List;
 public class ChapterController {
     @Autowired
     private ChapterService chapterService;
-    @GetMapping("list")
+    @GetMapping("/list")
     public List<ChapterDTO> chapter(){
         return chapterService.list();
     }
