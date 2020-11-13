@@ -1,9 +1,10 @@
-package com.ahut.business.controller;
+package com.ahut.business.controller.admin;
 
-import com.ahut.server.domain.Chapter;
+import com.ahut.server.dto.ChapterDTO;
 import com.ahut.server.service.ChapterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -14,11 +15,12 @@ import java.util.List;
  * @create 2020-11-09 20:49
  */
 @RestController
+@RequestMapping("/admin")
 public class ChapterController {
     @Autowired
     private ChapterService chapterService;
     @GetMapping("/chapter")
-    public List<Chapter> chapter(){
+    public List<ChapterDTO> chapter(){
         return chapterService.list();
     }
 }

@@ -1,6 +1,6 @@
 package com.ahut.server.service;
 
-import com.ahut.server.domain.Chapter;
+import com.ahut.server.dto.ChapterDTO;
 
 import java.util.List;
 
@@ -10,5 +10,5 @@ import java.util.List;
  * @create 2020-11-12 22:37
  */
 public interface ChapterService {
-    List<Chapter> list();
+    List<ChapterDTO> list();
 }
