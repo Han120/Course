@@ -5,6 +5,7 @@ import com.ahut.server.domain.ChapterExample;
 import com.ahut.server.dto.ChapterDTO;
 import com.ahut.server.mapper.ChapterMapper;
 import com.ahut.server.service.ChapterService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,7 @@ public class ChapterServImpl implements ChapterService {
 
     @Override
     public List<ChapterDTO> list() {
+        PageHelper.startPage(1,2);
         ChapterExample chapterExample = new ChapterExample();
         chapterExample.setOrderByClause("id desc");
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
