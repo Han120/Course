@@ -15,11 +15,11 @@ import java.util.List;
  * @create 2020-11-09 20:49
  */
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/admin/chapter")
 public class ChapterController {
     @Autowired
     private ChapterService chapterService;
-    @GetMapping("/chapter")
+    @GetMapping("list")
     public List<ChapterDTO> chapter(){
         return chapterService.list();
     }
