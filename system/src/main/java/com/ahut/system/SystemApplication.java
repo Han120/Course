@@ -17,9 +17,9 @@ public class SystemApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(SystemApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication application=new SpringApplication(SystemApplication.class);
-        Environment environment=application.run(args).getEnvironment();
+        SpringApplication application = new SpringApplication(SystemApplication.class);
+        Environment environment = application.run(args).getEnvironment();
         LOGGER.info("启动成功");
-        LOGGER.info("System地址：\thttp://127.0.0.1:{}",environment.getProperty("server.port"));
+        LOGGER.info("System地址：\thttp://127.0.0.1:{}", environment.getProperty("server.port"));
     }
 }
